@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Форма звернення</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="index.html#gallery">Перейти до постерів</a></li>
+          <li><a href="contacts.html">Форма звернення</a></li>
+        </ul>
+      </nav>
+
+      <h1 class="site-title">Форма зворотного зв'язку</h1>
+      <p class="text-content">
+        Поділіться своїми враженнями або порадьте цікавий фільм!
+      </p>
+
+      <form action="#">
+        <div>
+          <label for="username">Ваше ім'я:</label><br />
+          <input type="text" id="username" name="username" required />
+        </div>
+
+        <div>
+          <label for="useremail">Електронна пошта:</label><br />
+          <input type="email" id="useremail" name="useremail" required />
+        </div>
+
+        <div>
+          <label for="subject">Тема звернення:</label><br />
+          <select id="subject" name="subject" required>
+            <option value="">-- Оберіть тему --</option>
+            <option value="recommendation">Порадити фільм</option>
+            <option value="feedback">Відгук про сайт</option>
+            <option value="cooperation">Співпраця</option>
+            <option value="other">Інше</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="message">Повідомлення:</label><br />
+          <textarea id="message" name="message" rows="5" cols="30"></textarea>
+          <br />
+          <button type="submit">Надіслати</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
